@@ -99,6 +99,42 @@
         justify-content: center;
       }
     }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1.2s; /* adjust for timing */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.more-info {
+  padding-top: 2rem; /* Adds space above the paragraph */
+  font-size: 1rem;
+}
+
+.more-info a {
+  color: teal;
+  text-decoration: none;
+}
+
+.more-info a:visited {
+  color: teal;
+}
+
+.more-info a:hover,
+.more-info a:focus {
+  color: #008080; /* Slightly darker teal on hover */
+  text-decoration: none;
+}
+
+
   </style>
 </head>
 <body>
@@ -114,6 +150,9 @@ Eye floaters hijacked my focus — and nearly broke my mind. <em>Forget Floaters
         <a href="https://forgetfloaters.com/forget-floaters-sneak-peek.pdf" class="cta-button sneak-button">Sneak a Peek</a>
       </div>
     </div>
+<p class="more-info fade-in">
+  Want to learn more before deciding? Visit <a href="https://forgetfloaters.com" target="_blank">ForgetFloaters.com</a> or explore <a href="https://book.forgetfloaters.com/blog/" target="_blank">the blog</a> — Real advice. Free insights. No fluff.
+</p>
   </div>
 </body>
 </html>
